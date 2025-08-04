@@ -1,0 +1,71 @@
+﻿body {
+    font-family: sans-serif;
+    background-color: #808080;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
+
+.login-card {
+    max-width: 400px;
+    width: 100%;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h1 {
+        font-weight: 700;
+        margin-top: 0.5rem;
+        color: black;
+}
+
+.login-header p {
+        color: grey;
+    }
+
+.form-control {
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    padding: 0.75rem 1rem;
+}
+.form-control:focus {
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+        border-color: darkblue;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #212529;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .btn-login:hover {
+        background-color: #f0d699;
+        transform: translateY(-4px) scale(1.05);
+        ;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+.form-check-input:checked {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.d-flex.justify-content-between.align-items-center a {
+    color: #0d6efd;
+    text-decoration: none;
+}

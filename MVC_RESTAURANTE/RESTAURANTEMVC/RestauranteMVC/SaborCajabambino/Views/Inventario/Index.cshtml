@@ -1,0 +1,105 @@
+﻿@model IEnumerable<SaborCajabambino.Models.Inventario>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<style>
+    /* Estilo para los badges de estado */
+    .badge-status {
+        font-weight: normal;
+        padding: 0.5em 0.8em;
+        border-radius: 50rem;
+    }
+    a {
+        text-decoration:none;
+        color:white;
+    }
+    a:hover{
+            text-decoration: none;
+            color: black;
+    }
+
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="mb-0">Gestión de Inventario</h2>
+            <div class="d-flex align-items-center">
+                <!-- Barra de búsqueda -->
+                <div class="input-group me-2">
+                    <span class="input-group-text bg-white border-end-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                    <input type="text" class="form-control border-start-0" placeholder="Buscar Item...">
+                </div>
+                <!-- Botón para agregar un nuevo elemento -->
+                <a asp-action="Create" class="btn btn-dark d-flex align-items-center rounded-pill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg me-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z" />
+                    </svg>
+                    Agregar Nuevo Item
+                </a>
+            </div>
+        </div>
+
+        <div class="table-responsive-md" style=" max-height: 550px; overflow-y: auto;">
+            <table class="table table-hover">
+                <thead class="table-dark sticky-top">
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.ItemNombre)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Stock)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.UnidadMedida)
+                        </th>
+                        <th>
+                            Estado de Reorden
+                        </th>
+                        <th>
+                            Acciones
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ItemNombre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Stock)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.UnidadMedida)
+                            </td>
+                            <td>
+                                @if (item.Stock <= item.NivelReorden)
+                                {
+                                    <span class="badge badge-status bg-warning text-dark">Low Stock</span>
+                                }
+                                else
+                                {
+                                    <span class="badge badge-status bg-success">In Stock</span>
+                                }
+                            </td>
+                            <td>
+                                <span class="badge badge-status bg-warning"><a asp-action="Edit" asp-route-id="@item.IdItem">Edit</a> </span>
+                                 <span class="badge badge-status bg-info"><a asp-action="Details" asp-route-id="@item.IdItem">Details</a> </span>
+                                 <span class="badge badge-status bg-danger"><a asp-action="Delete" asp-route-id="@item.IdItem">Delete</a> </span>                                
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

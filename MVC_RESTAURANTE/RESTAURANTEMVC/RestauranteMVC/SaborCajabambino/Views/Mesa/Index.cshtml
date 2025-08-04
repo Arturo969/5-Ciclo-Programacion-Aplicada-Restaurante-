@@ -1,0 +1,168 @@
+﻿@model IEnumerable<SaborCajabambino.Models.Mesa>
+
+@{
+    ViewData["Title"] = "Table Management";
+}
+
+<style>
+    /* Estilo para los círculos de las mesas */
+    .table-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: #343a40;
+        border: 2px solid;
+        margin: 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        text-decoration: none; /* Elimina el subrayado del enlace */
+    }
+
+        .table-circle:hover {
+            transform: scale(1.05);
+        }
+
+        .table-circle.available {
+            border-color: #28a745; /* Verde */
+            background-color: #f8f9fa;
+            color: #28a745;
+        }
+        .table-circle.available:hover {
+                background-color: #28a745;
+                color: #f8f9fa;
+        }
+
+        .table-circle.occupied {
+            border-color: #ffc107; 
+            background-color: #f8f9fa;
+            color: #ffc107;
+        }
+
+        .table-circle.occupied:hover {
+                background-color: #ffc107;
+                color: #f8f9fa;
+        }
+
+        .table-circle.reserved {
+            border-color: deepskyblue; 
+            background-color: #f8f9fa;
+            color: deepskyblue;
+        }
+
+        .table-circle.reserved:hover {
+            background-color: deepskyblue;
+            color: #f8f9fa;
+        }
+
+        .table-circle.maintenance {
+            border-color: #dc3545; 
+            background-color: #f8f9fa;
+            color: #dc3545;
+        }
+
+        .table-circle.maintenance:hover {
+            background-color: #dc3545;
+            color: #f8f9fa;
+        }
+
+    /* Estilo para los botones debajo de los círculos */
+    .table-actions {
+        margin-top: 0.25rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.25rem; /* Espacio entre los botones */
+    }
+
+    /* Leyenda de estado */
+    .status-legend .legend-item {
+        display: flex;
+        align-items: center;
+        margin-right: 1.5rem;
+    }
+
+    .status-legend .legend-color {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+    }
+</style>
+
+<div class="container-fluid py-4">
+    <h2 class="mb-1">Gestión de Mesas</h2>
+    <p class="text-muted mb-4">Vista rápida del estado y la gestión de las mesas.</p>
+
+    <!-- Leyenda de estado -->
+    <div class="d-flex status-legend mb-4">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #28a745;"></div>
+            <span>Disponible</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #ffc107;"></div>
+            <span>Ocupada</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: deepskyblue;"></div>
+            <span>Reservada</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #dc3545;"></div>
+            <span>Mantenimiento</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex flex-wrap justify-content-start">
+                @foreach (var item in Model)
+                {
+                    string statusClass = "";
+                    switch (item.Estado)
+                    {
+                        case "Mantenimiento":
+                            statusClass = "maintenance";
+                            break;
+                        case "Ocupada":
+                            statusClass = "occupied";
+                            break;
+                        case "Reservada":
+                            statusClass = "reserved";
+                            break;
+                        default:
+                            statusClass = "available";
+                            break;
+                    }
+
+                    <div class="d-flex flex-column align-items-center me-3 mb-3">
+                        <!-- Círculo que funciona como enlace a la vista Details -->
+                        <a asp-action="Details" asp-route-id="@item.IdMesa" class="table-circle @statusClass">
+                            @item.IdMesa
+                        </a>
+
+                        <!-- Botones de acción debajo del círculo -->
+                        <div class="table-actions">
+                            <a asp-action="Edit" asp-route-id="@item.IdMesa" class="btn btn-sm btn-outline-primary">
+                                <!-- Ícono de editar -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708l10-10zM13.854 2.854 14 2l-3-3-.146.146 3 3zM2 13.5V13h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .5.5H2a.5.5 0 0 0 .5-.5v-.5z" />
+                                </svg>
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@item.IdMesa" class="btn btn-sm btn-outline-danger">
+                                <!-- Ícono de eliminar -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h4a1 1 0 0 1 1 1v1zM4.118 4 .5 3.5V3h15v.5L11.882 4H4.118zM4 14a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4H4v10z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
