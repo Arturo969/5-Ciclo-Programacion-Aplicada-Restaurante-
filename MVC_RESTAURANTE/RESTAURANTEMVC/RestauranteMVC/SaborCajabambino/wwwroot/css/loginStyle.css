@@ -56,7 +56,6 @@
     .btn-login:hover {
         background-color: #f0d699;
         transform: translateY(-4px) scale(1.05);
-        ;
         box-shadow: 0 4px 8px rgba(0,0,0,0.4);
     }
 

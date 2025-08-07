@@ -76,17 +76,22 @@ namespace SaborCajabambino.Controllers
         // GET: Inventario/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            ModelState.Remove("IdItemCategoriaNavigation");
             if (id == null)
             {
                 return NotFound();
             }
 
-            var inventario = await _context.Inventarios.FindAsync(id);
+            var inventario = await _context.Inventarios
+        .Include(i => i.IdItemCategoriaNavigation)
+        .FirstOrDefaultAsync(m => m.IdItem == id);
             if (inventario == null)
             {
                 return NotFound();
             }
-            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "IdItemCategoria", inventario.IdItemCategoria);
+            // Modificar para mostrar el nombre de la categoría en lugar del ID
+            //esto cambio
+            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "Categoria", inventario.IdItemCategoria);
             return View(inventario);
         }
 
@@ -97,33 +102,36 @@ namespace SaborCajabambino.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdItem,ItemNombre,IdItemCategoria,UnidadMedida,Stock,CostoPorUnidad,FechaDeExpiracion,NivelReorden,CantidadReorden,NecesitaReorden")] Inventario inventario)
         {
+            ModelState.Remove("IdItemCategoriaNavigation");
             if (id != inventario.IdItem)
             {
                 return NotFound();
-            }
+            }           
 
             if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(inventario);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!InventarioExists(inventario.IdItem))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "IdItemCategoria", inventario.IdItemCategoria);
+             {
+                 try
+                 {   
+                     _context.Update(inventario);
+                     await _context.SaveChangesAsync();
+                 }
+                 catch (DbUpdateConcurrencyException)
+                 {
+                     if (!InventarioExists(inventario.IdItem))
+                     {
+                         return NotFound();
+                     }
+                     else
+                     {
+                         throw;
+                     }
+                 }
+                 return RedirectToAction(nameof(Index));
+             }
+            //esto cambio
+            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "Categoria", inventario.IdItemCategoria);
             return View(inventario);
+
         }
 
         // GET: Inventario/Delete/5

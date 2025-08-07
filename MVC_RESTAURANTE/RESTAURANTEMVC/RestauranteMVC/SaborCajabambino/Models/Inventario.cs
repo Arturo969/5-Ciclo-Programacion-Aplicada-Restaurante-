@@ -24,8 +24,8 @@ public partial class Inventario
     public decimal? CantidadReorden { get; set; }
 
     public bool? NecesitaReorden { get; set; }
-
-    public virtual ItemCategorium IdItemCategoriaNavigation { get; set; } = null!;
+    //esto cambio
+    public virtual ItemCategorium? IdItemCategoriaNavigation { get; set; }
 
     public virtual ICollection<ProductoIngrediente> ProductoIngredientes { get; set; } = new List<ProductoIngrediente>();
 }

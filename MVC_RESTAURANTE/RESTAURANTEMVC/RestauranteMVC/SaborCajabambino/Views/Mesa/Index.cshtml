@@ -1,95 +1,11 @@
 ﻿@model IEnumerable<SaborCajabambino.Models.Mesa>
-
+<link href="~/css/mesasStyle.css" rel="stylesheet" />
 @{
     ViewData["Title"] = "Table Management";
 }
 
-<style>
-    /* Estilo para los círculos de las mesas */
-    .table-circle {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-weight: bold;
-        color: #343a40;
-        border: 2px solid;
-        margin: 0.5rem;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-        text-decoration: none; /* Elimina el subrayado del enlace */
-    }
-
-        .table-circle:hover {
-            transform: scale(1.05);
-        }
-
-        .table-circle.available {
-            border-color: #28a745; /* Verde */
-            background-color: #f8f9fa;
-            color: #28a745;
-        }
-        .table-circle.available:hover {
-                background-color: #28a745;
-                color: #f8f9fa;
-        }
-
-        .table-circle.occupied {
-            border-color: #ffc107; 
-            background-color: #f8f9fa;
-            color: #ffc107;
-        }
-
-        .table-circle.occupied:hover {
-                background-color: #ffc107;
-                color: #f8f9fa;
-        }
-
-        .table-circle.reserved {
-            border-color: deepskyblue; 
-            background-color: #f8f9fa;
-            color: deepskyblue;
-        }
-
-        .table-circle.reserved:hover {
-            background-color: deepskyblue;
-            color: #f8f9fa;
-        }
-
-        .table-circle.maintenance {
-            border-color: #dc3545; 
-            background-color: #f8f9fa;
-            color: #dc3545;
-        }
-
-        .table-circle.maintenance:hover {
-            background-color: #dc3545;
-            color: #f8f9fa;
-        }
-
-    /* Estilo para los botones debajo de los círculos */
-    .table-actions {
-        margin-top: 0.25rem;
-        display: flex;
-        justify-content: center;
-        gap: 0.25rem; /* Espacio entre los botones */
-    }
-
-    /* Leyenda de estado */
-    .status-legend .legend-item {
-        display: flex;
-        align-items: center;
-        margin-right: 1.5rem;
-    }
-
-    .status-legend .legend-color {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        margin-right: 0.5rem;
-    }
+<style >
+   
 </style>
 
 <div class="container-fluid py-4">

@@ -3,13 +3,31 @@
 @{
     ViewData["Title"] = "Index";
 }
+<style>
+    /* Estilo para los badges de estado */
+    .badge-status {
+        font-weight: normal;
+        padding: 0.5em 0.8em;
+        border-radius: 50rem;
+    }
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+</style>
 <h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-hover">
     <thead>
         <tr>
             <th>
@@ -73,9 +91,11 @@
                 @Html.DisplayFor(modelItem => item.IdMesaNavigation.IdMesa)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdPedido">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdPedido">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdPedido">Delete</a>
+                    <span class ="badge badge-status bg-warning text-dark"><a asp-action="Edit" asp-route-id="@item.IdPedido">Edit</a></span>
+                    <span class="badge badge-status bg-info text-dark">
+                        <a asp-action="Details" asp-route-id="@item.IdPedido">Details</a>
+                    </span>
+                    <span class="badge badge-status bg-danger text-dark"><a asp-action="Delete" asp-route-id="@item.IdPedido">Delete</a></span>
             </td>
         </tr>
 }

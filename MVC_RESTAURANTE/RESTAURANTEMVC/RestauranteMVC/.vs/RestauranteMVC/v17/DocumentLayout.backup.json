@@ -3,108 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\mesa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\mesa\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\wwwroot\\css\\loginstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\wwwroot\\css\\loginstyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\models\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\inventario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\inventario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\producto\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\productoingrediente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\productoingrediente\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\login\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\reservacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\views\\pedido\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\views\\pedido\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\productoingredientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\productoingredientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\mesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\mesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\detallepedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\detallepedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\saborcajabambino.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\saborcajabambino.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\itemcategoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\itemcategoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\data\\restauranteprogramacioniicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\data\\restauranteprogramacioniicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|c:\\users\\jesus\\desktop\\2025\\5_ciclo\\restaurante\\5-ciclo-programacion-aplicada-restaurante-\\mvc_restaurante\\restaurantemvc\\restaurantemvc\\saborcajabambino\\models\\productoingrediente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F0B9FA0-2A9B-4EA3-A0BA-F35A4DD1214A}|SaborCajabambino\\SaborCajabambino.csproj|solutionrelative:saborcajabambino\\models\\productoingrediente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,320 +54,145 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Mesa\\Index.cshtml",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Mesa\\Index.cshtml",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Mesa\\Index.cshtml",
-              "RelativeToolTip": "SaborCajabambino\\Views\\Mesa\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAhAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Inventario\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Inventario\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Inventario\\Edit.cshtml",
+              "RelativeToolTip": "SaborCajabambino\\Views\\Inventario\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T04:25:05.034Z",
+              "WhenOpened": "2025-08-06T23:09:42.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Inventario\\Index.cshtml",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Inventario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Inventario\\Index.cshtml",
-              "RelativeToolTip": "SaborCajabambino\\Views\\Inventario\\Index.cshtml",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAAF0AAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T03:41:07.39Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "bootstrap.css",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeDocumentMoniker": "SaborCajabambino\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeToolTip": "SaborCajabambino\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ViewState": "AgIAAEwQAAAAAAAAAAAIwEgRAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-03T03:13:45.476Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "SaborCajabambino\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "SaborCajabambino\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-03T01:13:16.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "SaborCajabambino\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T00:54:27.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PedidoController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\PedidoController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\PedidoController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\PedidoController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\PedidoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:42:34.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ProductoIngredienteController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:02:19.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\login\\LoginController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\login\\LoginController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\login\\LoginController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\login\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T00:37:09.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Program.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Program.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Program.cs",
-              "RelativeToolTip": "SaborCajabambino\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwB4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:30:32.144Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "SaborCajabambino\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T00:39:16.633Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "loginStyle.css",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\wwwroot\\css\\loginStyle.css",
-              "RelativeDocumentMoniker": "SaborCajabambino\\wwwroot\\css\\loginStyle.css",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\wwwroot\\css\\loginStyle.css",
-              "RelativeToolTip": "SaborCajabambino\\wwwroot\\css\\loginStyle.css",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-08-03T01:19:23.496Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MesaController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\MesaController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\MesaController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\MesaController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\MesaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:57:14.222Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ReservaController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ReservaController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\ReservaController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ReservaController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\ReservaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T20:03:40.566Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\EmpleadoController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\EmpleadoController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\EmpleadoController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\EmpleadoController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:47:40.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "DetallePedidoController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\DetallePedidoController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\DetallePedidoController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\DetallePedidoController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\DetallePedidoController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAzwBcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:50:59.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\CategoriaController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\CategoriaController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\CategoriaController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:44:32.917Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "InventarioController.cs",
               "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\InventarioController.cs",
               "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\InventarioController.cs",
               "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\InventarioController.cs",
               "RelativeToolTip": "SaborCajabambino\\Controllers\\InventarioController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:54:09.135Z"
+              "WhenOpened": "2025-08-06T22:51:19.746Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ProductoController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ProductoController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\ProductoController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ProductoController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\ProductoController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\Inventario.cs",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Models\\Inventario.cs",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\Inventario.cs",
+              "RelativeToolTip": "SaborCajabambino\\Models\\Inventario.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA7wBoAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:59:47.494Z"
+              "WhenOpened": "2025-08-06T22:51:07.651Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "SaborCajabambino.csproj",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\SaborCajabambino.csproj",
-              "RelativeDocumentMoniker": "SaborCajabambino\\SaborCajabambino.csproj",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\SaborCajabambino.csproj",
-              "RelativeToolTip": "SaborCajabambino\\SaborCajabambino.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-31T19:18:41.823Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ItemCategoriaController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ItemCategoriaController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\ItemCategoriaController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ItemCategoriaController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\ItemCategoriaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Program.cs",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Program.cs",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Program.cs",
+              "RelativeToolTip": "SaborCajabambino\\Program.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:55:42.434Z"
+              "WhenOpened": "2025-08-06T22:47:52.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\HomeController.cs",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Producto\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Producto\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Producto\\Edit.cshtml",
+              "RelativeToolTip": "SaborCajabambino\\Views\\Producto\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T16:23:29.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Inventario\\Index.cshtml",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Inventario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Inventario\\Index.cshtml",
+              "RelativeToolTip": "SaborCajabambino\\Views\\Inventario\\Index.cshtml",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAGAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T20:44:05.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Pedido\\Index.cshtml",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\Pedido\\Index.cshtml",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\Pedido\\Index.cshtml",
+              "RelativeToolTip": "SaborCajabambino\\Views\\Pedido\\Index.cshtml",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAIwGEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-05T20:43:57.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SaborCajabambino\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-04T20:37:51.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductoIngrediente.cs",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\ProductoIngrediente.cs",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Models\\ProductoIngrediente.cs",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\ProductoIngrediente.cs",
+              "RelativeToolTip": "SaborCajabambino\\Models\\ProductoIngrediente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:46:35.395Z"
+              "WhenOpened": "2025-08-04T20:35:20.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "SaborCajabambino\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\ProductoIngrediente\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Views\\ProductoIngrediente\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Views\\ProductoIngrediente\\Edit.cshtml",
+              "RelativeToolTip": "SaborCajabambino\\Views\\ProductoIngrediente\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-04T20:34:16.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductoIngredienteController.cs",
+              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
+              "RelativeDocumentMoniker": "SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
+              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
+              "RelativeToolTip": "SaborCajabambino\\Controllers\\ProductoIngredienteController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:49:51.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\Producto.cs",
-              "RelativeToolTip": "SaborCajabambino\\Models\\Producto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAswBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:41:04.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\appsettings.json",
-              "RelativeDocumentMoniker": "SaborCajabambino\\appsettings.json",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\appsettings.json",
-              "RelativeToolTip": "SaborCajabambino\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-31T19:31:25.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Models\\Categoria.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Models\\Categoria.cs",
-              "RelativeToolTip": "SaborCajabambino\\Models\\Categoria.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:26:09.761Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "RestauranteProgramacionIiContext.cs",
-              "DocumentMoniker": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Data\\RestauranteProgramacionIiContext.cs",
-              "RelativeDocumentMoniker": "SaborCajabambino\\Data\\RestauranteProgramacionIiContext.cs",
-              "ToolTip": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\Data\\RestauranteProgramacionIiContext.cs",
-              "RelativeToolTip": "SaborCajabambino\\Data\\RestauranteProgramacionIiContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-31T19:25:26.242Z"
+              "WhenOpened": "2025-08-04T20:34:10.882Z"
             }
           ]
         }
