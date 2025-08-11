@@ -3,105 +3,169 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link href="~/css/tablaStyle.css" rel="stylesheet" />
+<h1>Empleados</h1>
 
-<h1>Index</h1>
+<div class="row">
+    <div class="col-md-4" id="detalleEmpleado">
+        
+    </div>
+    <div class="col-md-8">
+            <div class="d-flex align-items-center">
+                <!-- Barra de búsqueda -->
+                <div class="input-group m-4">
+                    <span class="input-group-text bg-white border-end-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                    <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Buscar empleado...">
+                </div>
+                <!-- Botón para agregar un nuevo elemento -->
+                <a asp-action="Create" class="btn btn-dark d-flex align-items-center rounded-pill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg me-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z" />
+                    </svg>
+                    Agregar Nuevo Item
+                </a>
+            </div>
+        
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NombreCompleto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Dni)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Direccion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefono)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CorreoElectronico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Rol)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Turno)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaContratacion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Salario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Usuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Contrasena)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NombreCompleto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dni)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaNacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CorreoElectronico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rol)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Turno)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaContratacion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Salario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Usuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contrasena)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdEmpleado">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdEmpleado">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdEmpleado">Delete</a>
-            </td>
-        </tr>
+        <hr />
+        <table class="table table-hover">
+            <thead class="table-dark sticky-top">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NombreCompleto)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Dni)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Telefono)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Rol)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Estado)
+                    </th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NombreCompleto)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Dni)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefono)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Rol)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Estado)
+                        </td>
+                        <td>
+                            <span class="badge badge-status bg-warning"><a asp-action="Edit" asp-route-id="@item.IdEmpleado">Editar</a></span>
+                            <span class="badge badge-status bg-info"><a href="javascript:void(0);" onclick="cargarDetalle(@item.IdEmpleado)">Detalle</a></span>
+                            <span class="badge badge-status bg-danger"><a asp-action="Delete" asp-route-id="@item.IdEmpleado">Eliminar</a></span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        // Añade esta variable al inicio de tu script
+        var empleadosCache = @Json.Serialize(Model);
+
+         // Función para cargar los detalles
+        function cargarDetalle(id) {
+            $.get('/Empleado/Details/' + id, function(data) {
+                $('#detalleEmpleado').html(data);
+            });
+        }
+
+        // Cargar el primer empleado al iniciar
+        $(document).ready(function() {
+            // Busca el primer ID de empleado en la tabla
+            var primerEmpleadoId = $('table tbody tr:first .bg-info a').attr('onclick');
+            if (!primerEmpleadoId) {
+                // Alternativa: busca el primer ID directamente del modelo Razor
+                var primerId = @((Model.FirstOrDefault()?.IdEmpleado ?? 0));
+                if (primerId > 0) {
+                    cargarDetalle(primerId);
+                }
+            } else {
+                // Si existe onclick, extrae el ID
+                primerEmpleadoId = primerEmpleadoId.match(/\d+/)[0];
+                cargarDetalle(primerEmpleadoId);
+            }
+        });
+
+
+        // Función para actualizar la tabla con los resultados
+        function actualizarTabla(empleados) {
+            var tbody = $('table tbody');
+            tbody.empty();
+
+            empleados.forEach(function(item) {
+                var tr = $('<tr>');
+                tr.append($('<td>').text(item.nombreCompleto));
+                tr.append($('<td>').text(item.dni));
+                tr.append($('<td>').text(item.telefono));
+                tr.append($('<td>').text(item.rol));
+                tr.append($('<td>').text(item.estado));
+
+                var acciones = $('<td>').append(
+                    `<span class="badge badge-status bg-warning"><a href="/Empleado/Edit/${item.idEmpleado}">Editar</a></span> ` +
+                    `<span class="badge badge-status bg-info"><a href="javascript:void(0);" onclick="cargarDetalle(${item.idEmpleado})">Detalle</a></span> ` +
+                    `<span class="badge badge-status bg-danger"><a href="/Empleado/Delete/${item.idEmpleado}">Eliminar</a></span>`
+                );
+                tr.append(acciones);
+
+                tbody.append(tr);
+            });
+        }
+
+        // Función de búsqueda con debounce
+        var timeoutId;
+        $('#searchInput').on('input', function() {
+            clearTimeout(timeoutId);
+            var searchTerm = $(this).val().toLowerCase();
+            
+            if (searchTerm.length < 3) {
+                // Para búsquedas cortas, usa el caché
+                var resultados = empleadosCache.filter(e => 
+                    e.nombreCompleto.toLowerCase().includes(searchTerm) ||
+                    e.dni.toLowerCase().includes(searchTerm) ||
+                    e.rol.toLowerCase().includes(searchTerm) ||
+                    (e.telefono && e.telefono.toLowerCase().includes(searchTerm))
+                );
+                actualizarTabla(resultados);
+            } else {
+                // Para búsquedas más específicas, consulta al servidor
+                timeoutId = setTimeout(function() {
+                    $.get('/Empleado/Buscar', { searchTerm: searchTerm })
+                        .done(function(data) {
+                            actualizarTabla(data);
+                        });
+                }, 300);
+            }
+        });
+    </script>
 }
-    </tbody>
-</table>
+
+
+

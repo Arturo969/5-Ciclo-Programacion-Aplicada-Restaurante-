@@ -46,13 +46,18 @@ namespace SaborCajabambino.Controllers
                 return NotFound();
             }
 
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", inventario);
+            }
+
             return View(inventario);
         }
 
         // GET: Inventario/Create
         public IActionResult Create()
         {
-            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "IdItemCategoria");
+            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "Categoria");
             return View();
         }
 
@@ -69,7 +74,8 @@ namespace SaborCajabambino.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "IdItemCategoria", inventario.IdItemCategoria);
+            // 
+            ViewData["IdItemCategoria"] = new SelectList(_context.ItemCategoria, "IdItemCategoria", "Categoria", inventario.IdItemCategoria);
             return View(inventario);
         }
 

@@ -30,7 +30,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Empleado}/{action=Index}/{id?}");
 
 
 var defaultCulture = new CultureInfo("es-MX");

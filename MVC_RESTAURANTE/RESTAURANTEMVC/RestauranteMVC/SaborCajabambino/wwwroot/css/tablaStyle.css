@@ -1,0 +1,16 @@
+﻿/* Estilo para los badges de estado */
+.badge-status {
+    font-weight: normal;
+    padding: 0.5em 0.8em;
+    border-radius: 50rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: black;
+    }

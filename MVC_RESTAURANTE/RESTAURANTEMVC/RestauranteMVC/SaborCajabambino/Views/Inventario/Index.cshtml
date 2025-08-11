@@ -4,37 +4,24 @@
     ViewData["Title"] = "Index";
 }
 
-<style>
-    /* Estilo para los badges de estado */
-    .badge-status {
-        font-weight: normal;
-        padding: 0.5em 0.8em;
-        border-radius: 50rem;
-    }
-    a {
-        text-decoration:none;
-        color:white;
-    }
-    a:hover{
-            text-decoration: none;
-            color: black;
-    }
-
-</style>
+<link href="~/css/tablaStyle.css" rel="stylesheet" />
+<h1>Inventario</h1>
 
 <div class="row">
-    <div class="col-12">
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="mb-0">Gestión de Inventario</h2>
+    <div class="col-md-4 mt-4" id="detalleInventario">
+        <!-- Aquí se cargará la vista parcial -->
+    </div>
+    <!-- Columna derecha para la tabla -->
+    <div class="col-md-8">
             <div class="d-flex align-items-center">
                 <!-- Barra de búsqueda -->
-                <div class="input-group me-2">
+                <div class="input-group m-4">
                     <span class="input-group-text bg-white border-end-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                         </svg>
                     </span>
-                    <input type="text" class="form-control border-start-0" placeholder="Buscar Item...">
+                    <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Buscar Item...">
                 </div>
                 <!-- Botón para agregar un nuevo elemento -->
                 <a asp-action="Create" class="btn btn-dark d-flex align-items-center rounded-pill">
@@ -44,23 +31,23 @@
                     Agregar Nuevo Item
                 </a>
             </div>
-        </div>
+            <hr />
 
         <div class="table-responsive-md" style=" max-height: 550px; overflow-y: auto;">
             <table class="table table-hover">
                 <thead class="table-dark sticky-top">
                     <tr>
                         <th>
-                            @Html.DisplayNameFor(model => model.ItemNombre)
+                            Nombre
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.Stock)
+                            Stock
                         </th>
                         <th>
-                            @Html.DisplayNameFor(model => model.UnidadMedida)
+                            Unidad
                         </th>
                         <th>
-                            Estado de Reorden
+                            Estado
                         </th>
                         <th>
                             Acciones
@@ -87,13 +74,15 @@
                                 }
                                 else
                                 {
-                                    <span class="badge badge-status bg-success">In Stock</span>
+                                    <span class="badge badge-status bg-success">En stock</span>
                                 }
                             </td>
                             <td>
-                                <span class="badge badge-status bg-warning"><a asp-action="Edit" asp-route-id="@item.IdItem">Edit</a> </span>
-                                 <span class="badge badge-status bg-info"><a asp-action="Details" asp-route-id="@item.IdItem">Details</a> </span>
-                                 <span class="badge badge-status bg-danger"><a asp-action="Delete" asp-route-id="@item.IdItem">Delete</a> </span>                                
+                                <span class="badge badge-status bg-warning"><a asp-action="Edit" asp-route-id="@item.IdItem">Editar</a> </span>
+                                <span class="badge badge-status bg-info">
+                                    <a href="javascript:void(0);" onclick="cargarDetalle(@item.IdItem)">Detalle</a>
+                                </span>
+                                 <span class="badge badge-status bg-danger"><a asp-action="Delete" asp-route-id="@item.IdItem">Eliminar</a> </span>                                
                             </td>
                         </tr>
                     }
@@ -102,4 +91,23 @@
         </div>
     </div>
 </div>
+
+@section Scripts {
+    <script>
+          // Función para cargar los detalles
+        function cargarDetalle(id) {
+            $.get('/Inventario/Details/' + id, function(data) {
+                $('#detalleInventario').html(data);
+            });
+        }
+
+        // Cargar el primer item al iniciar
+        $(document).ready(function() {
+            var primerId = @((Model.FirstOrDefault()?.IdItem ?? 0));
+            if (primerId > 0) {
+                cargarDetalle(primerId);
+            }
+        });
+    </script>
+}
 

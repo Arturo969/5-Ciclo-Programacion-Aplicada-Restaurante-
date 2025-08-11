@@ -1,0 +1,61 @@
+@model SaborCajabambino.Models.Inventario
+<link href="~/css/detailStyle.css" rel="stylesheet" />
+<div class="details-container shadow p-4">    
+    <h4 class="mb-3">Detalles del Item</h4>    
+    <div class="row">
+        <dt class="col-sm-5">
+            Nombre
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.ItemNombre)
+        </dd>
+        <dt class="col-sm-5">
+            Unidad
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.UnidadMedida)
+        </dd>
+        <dt class="col-sm-5">
+            Stock
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+        <dt class="col-sm-5">
+            C/U
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.CostoPorUnidad)
+        </dd>
+        <dt class="col-sm-5">
+            Expiración
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.FechaDeExpiracion)
+        </dd>
+        <dt class="col-sm-5">
+            Nivel de Reorden
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.NivelReorden)
+        </dd>
+        <dt class="col-sm-5">
+            Cantidad de Reorden
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.CantidadReorden)
+        </dd>
+        <dt class="col-sm-5">
+			Necesita Reorden
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.NecesitaReorden)
+        </dd>
+        <dt class="col-sm-5">
+            Categoría
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.IdItemCategoriaNavigation.Categoria)
+        </dd>
+    </div>
+</div>

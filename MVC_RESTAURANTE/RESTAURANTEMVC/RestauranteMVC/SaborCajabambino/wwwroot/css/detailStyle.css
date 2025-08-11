@@ -1,0 +1,7 @@
+﻿/* Añade esto a tu archivo CSS existente */
+#detalleEmpleado #detalleInventario {
+    border-right: 1px solid #dee2e6;
+
+    padding: 20px;
+}
+

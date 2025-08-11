@@ -40,12 +40,21 @@ namespace SaborCajabambino.Controllers
                 return NotFound();
             }
 
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", empleado); // Retorna una vista parcial para solicitudes AJAX
+            }
+            // si no es AJAX, devolver vista completa
             return View(empleado);
         }
 
         // GET: Empleado/Create
         public IActionResult Create()
         {
+            var roles = _context.Empleados.Select(e => e.Rol).Distinct().ToList();
+            ViewData["Roles"] = new SelectList(roles);
+            ViewData["Turnos"] = new SelectList(new[] { "Completo", "Medio tiempo" });
+            ViewData["Estados"] = new SelectList(new[] { "Activo", "Vacaciones", "Despedido" });
             return View();
         }
 
@@ -62,6 +71,10 @@ namespace SaborCajabambino.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            var roles = _context.Empleados.Select(e => e.Rol).Distinct().ToList();
+            ViewData["Roles"] = new SelectList(roles);
+            ViewData["Turnos"] = new SelectList(new[] { "Completo", "Medio tiempo" });
+            ViewData["Estados"] = new SelectList(new[] { "Activo", "Vacaciones", "Despedido" });
             return View(empleado);
         }
 
@@ -78,6 +91,10 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
+            var roles = await _context.Empleados.Select(e => e.Rol).Distinct().ToListAsync();
+            ViewData["Roles"] = new SelectList(roles, empleado.Rol);
+            ViewData["Turnos"] = new SelectList(new[] { "Completo", "Medio tiempo" }, empleado.Turno);
+            ViewData["Estados"] = new SelectList(new[] { "Activo", "Vacaciones", "Despedido" }, empleado.Estado);
             return View(empleado);
         }
 
@@ -99,6 +116,7 @@ namespace SaborCajabambino.Controllers
                 {
                     _context.Update(empleado);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index)); // Redirigir a la acción Index después de guardar los cambios 
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -111,8 +129,11 @@ namespace SaborCajabambino.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
             }
+            var roles = _context.Empleados.Select(e => e.Rol).Distinct().ToList();
+            ViewData["Roles"] = new SelectList(roles, empleado.Rol);
+            ViewData["Turnos"] = new SelectList(new[] { "Completo", "Medio tiempo" }, empleado.Turno);
+            ViewData["Estados"] = new SelectList(new[] { "Activo", "Vacaciones", "Despedido" }, empleado.Estado);
             return View(empleado);
         }
 
@@ -148,6 +169,31 @@ namespace SaborCajabambino.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+        // POST: Empleado/Buscar
+        [HttpGet]
+        public async Task<IActionResult> Buscar(string searchTerm)
+        {
+            if (string.IsNullOrWhiteSpace(searchTerm))
+            {
+                return Json(await _context.Empleados.ToListAsync());
+            }
+
+            var empleados = await _context.Empleados
+                .Where(e => e.NombreCompleto.Contains(searchTerm) ||
+                            e.Dni.Contains(searchTerm) ||
+                            e.Rol.Contains(searchTerm) ||
+                            (e.Telefono != null && e.Telefono.Contains(searchTerm)))
+                .ToListAsync();
+
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return Json(empleados);
+            }
+
+            return View("Index", empleados);
+        }
+
 
         private bool EmpleadoExists(int id)
         {

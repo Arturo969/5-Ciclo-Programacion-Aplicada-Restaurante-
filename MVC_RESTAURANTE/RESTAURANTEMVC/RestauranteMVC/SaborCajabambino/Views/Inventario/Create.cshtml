@@ -4,25 +4,26 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Inventario</h4>
+<h4>Nuevo Item</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="ItemNombre" class="control-label"></label>
+                <label asp-for="ItemNombre" class="control-label">Nombre</label>
                 <input asp-for="ItemNombre" class="form-control" />
                 <span asp-validation-for="ItemNombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdItemCategoria" class="control-label"></label>
-                <select asp-for="IdItemCategoria" class ="form-control" asp-items="ViewBag.IdItemCategoria"></select>
+                <label asp-for="IdItemCategoria" class="control-label">Categoría</label>
+                <select asp-for="IdItemCategoria" class="form-control" asp-items="ViewBag.IdItemCategoria">
+                    <option value="">-- Seleccione una categoría --</option>
+                </select>
+                <span asp-validation-for="IdItemCategoria" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="UnidadMedida" class="control-label"></label>
+                <label asp-for="UnidadMedida" class="control-label">Unidad de medida</label>
                 <input asp-for="UnidadMedida" class="form-control" />
                 <span asp-validation-for="UnidadMedida" class="text-danger"></span>
             </div>
@@ -32,34 +33,34 @@
                 <span asp-validation-for="Stock" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CostoPorUnidad" class="control-label"></label>
+                <label asp-for="CostoPorUnidad" class="control-label">Costo por unidad</label>
                 <input asp-for="CostoPorUnidad" class="form-control" />
                 <span asp-validation-for="CostoPorUnidad" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FechaDeExpiracion" class="control-label"></label>
-                <input asp-for="FechaDeExpiracion" class="form-control" />
+                <label asp-for="FechaDeExpiracion" class="control-label">Fecha de expiración</label>
+                <input asp-for="FechaDeExpiracion" class="form-control" type="date" />
                 <span asp-validation-for="FechaDeExpiracion" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="NivelReorden" class="control-label"></label>
+                <label asp-for="NivelReorden" class="control-label">Nivel mínimo de reorden</label>
                 <input asp-for="NivelReorden" class="form-control" />
                 <span asp-validation-for="NivelReorden" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="CantidadReorden" class="control-label"></label>
+                <label asp-for="CantidadReorden" class="control-label">Cantidad de reorden</label>
                 <input asp-for="CantidadReorden" class="form-control" />
                 <span asp-validation-for="CantidadReorden" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Crear" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Regresar a la lista de items</a>
 </div>
 
 @section Scripts {
