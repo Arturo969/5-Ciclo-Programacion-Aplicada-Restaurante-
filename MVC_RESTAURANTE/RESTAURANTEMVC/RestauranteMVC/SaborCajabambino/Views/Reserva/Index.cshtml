@@ -3,69 +3,142 @@
 @{
     ViewData["Title"] = "Index";
 }
+<link href="~/css/tablaStyle.css" rel="stylesheet" />
+<h1>Reservas</h1>
 
-<h1>Index</h1>
+<div class="row">
+    <div class="col-md-4" id="detalleReserva">
+        <!-- Aquí se cargará la vista parcial -->
+    </div>
+    <div class="col-md-8">
+        <div class="d-flex align-items-center">
+            <!-- Barra de búsqueda -->
+            <div class="input-group m-4">
+                <span class="input-group-text bg-white border-end-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </span>
+                <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Buscar reserva...">
+            </div>
+            <!-- Botón para agregar -->
+            <a asp-action="Create" class="btn btn-dark d-flex align-items-center rounded-pill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg me-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z" />
+                </svg>
+                Nueva Reserva
+            </a>
+        </div>
+        <hr />
+        <div class="table-responsive-md" style=" max-height: 550px; overflow-y: auto;">
+        <table class="table table-hover">
+            <thead class="table-dark sticky-top">
+                <tr>
+                    <th>Cliente</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Mesa</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.IdClienteNavigation.Nombres)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Fecha)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Hora)</td>
+                        <td>@Html.DisplayFor(modelItem => item.IdMesaNavigation.IdMesa)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                        <td>
+                            <span class="badge badge-status bg-warning">
+                                <a asp-action="Edit" asp-route-id="@item.IdReserva">Editar</a>
+                            </span>
+                            <span class="badge badge-status bg-info">
+                                <a href="javascript:void(0);" onclick="cargarDetalle(@item.IdReserva)">Detalle</a>
+                            </span>
+                            <span class="badge badge-status bg-danger">
+                                <a asp-action="Delete" asp-route-id="@item.IdReserva">Eliminar</a>
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        </div>
+        
+    </div>
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Fecha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Hora)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NumeroPersonas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Comentarios)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdClienteNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdMesaNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Hora)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumeroPersonas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Comentarios)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdClienteNavigation.IdCliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdMesaNavigation.IdMesa)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdReserva">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdReserva">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdReserva">Delete</a>
-            </td>
-        </tr>
+@section Scripts {
+    <script>
+        var reservasCache = @Json.Serialize(Model.Select(r => new {
+            idReserva = r.IdReserva,
+            cliente = r.IdClienteNavigation.Nombres + ' ' + r.IdClienteNavigation.ApellidoPaterno + ' ' + r.IdClienteNavigation.ApellidoMaterno,
+            fecha = r.Fecha,
+            hora = r.Hora,
+            mesa = r.IdMesaNavigation.IdMesa,
+            estado = r.Estado
+        }));
+
+        function cargarDetalle(id) {
+            $.get('/Reserva/Details/' + id, function(data) {
+                $('#detalleReserva').html(data);
+            });
+        }
+
+        $(document).ready(function() {
+            var primerId = @((Model.FirstOrDefault()?.IdReserva ?? 0));
+            if (primerId > 0) {
+                cargarDetalle(primerId);
+            }
+        });
+
+        // Función de búsqueda con debounce
+        var timeoutId;
+        $('#searchInput').on('input', function() {
+            clearTimeout(timeoutId);
+            var searchTerm = $(this).val().toLowerCase();
+            
+            if (searchTerm.length < 3) {
+                var resultados = reservasCache.filter(r => 
+                    r.cliente.toLowerCase().includes(searchTerm) ||
+                    r.estado.toLowerCase().includes(searchTerm)
+                );
+                actualizarTabla(resultados);
+            } else {
+                timeoutId = setTimeout(function() {
+                    $.get('/Reserva/Buscar', { searchTerm: searchTerm })
+                        .done(function(data) {
+                            actualizarTabla(data);
+                        });
+                }, 300);
+            }
+        });
+
+        function actualizarTabla(reservas) {
+            var tbody = $('table tbody');
+            tbody.empty();
+
+            reservas.forEach(function(item) {
+                var tr = $('<tr>');
+                // Usa las propiedades correctas según tu caché y respuesta del servidor
+                tr.append($('<td>').text(item.cliente));
+                tr.append($('<td>').text(item.fecha));
+                tr.append($('<td>').text(item.hora));
+                tr.append($('<td>').text(item.mesa));
+                tr.append($('<td>').text(item.estado));
+
+                var acciones = $('<td>').append(
+                    `<span class="badge badge-status bg-warning"><a href="/Reserva/Edit/${item.idReserva}">Editar</a></span> ` +
+                    `<span class="badge badge-status bg-info"><a href="javascript:void(0);" onclick="cargarDetalle(${item.idReserva})">Detalle</a></span> ` +
+                    `<span class="badge badge-status bg-danger"><a href="/Reserva/Delete/${item.idReserva}">Eliminar</a></span>`
+                );
+                tr.append(acciones);
+
+                tbody.append(tr);
+            });
+        }
+    </script>
 }
-    </tbody>
-</table>

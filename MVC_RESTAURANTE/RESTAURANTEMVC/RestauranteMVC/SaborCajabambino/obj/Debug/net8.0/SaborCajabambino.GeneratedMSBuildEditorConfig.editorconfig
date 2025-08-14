@@ -204,6 +204,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jesus/Desktop/2025/5_CICLO/RESTAURANTE/5-Ciclo-Programacion-Aplicada-Restaurante-/MVC_RESTAURANTE/RESTAURANTEMVC/RestauranteMVC/SaborCajabambino/Views/Pedido/Margen.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXE1hcmdlbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jesus/Desktop/2025/5_CICLO/RESTAURANTE/5-Ciclo-Programacion-Aplicada-Restaurante-/MVC_RESTAURANTE/RESTAURANTEMVC/RestauranteMVC/SaborCajabambino/Views/ProductoIngrediente/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9JbmdyZWRpZW50ZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -244,6 +248,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/jesus/Desktop/2025/5_CICLO/RESTAURANTE/5-Ciclo-Programacion-Aplicada-Restaurante-/MVC_RESTAURANTE/RESTAURANTEMVC/RestauranteMVC/SaborCajabambino/Views/Producto/_Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cX0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/jesus/Desktop/2025/5_CICLO/RESTAURANTE/5-Ciclo-Programacion-Aplicada-Restaurante-/MVC_RESTAURANTE/RESTAURANTEMVC/RestauranteMVC/SaborCajabambino/Views/Reserva/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -262,6 +270,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/jesus/Desktop/2025/5_CICLO/RESTAURANTE/5-Ciclo-Programacion-Aplicada-Restaurante-/MVC_RESTAURANTE/RESTAURANTEMVC/RestauranteMVC/SaborCajabambino/Views/Reserva/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jesus/Desktop/2025/5_CICLO/RESTAURANTE/5-Ciclo-Programacion-Aplicada-Restaurante-/MVC_RESTAURANTE/RESTAURANTEMVC/RestauranteMVC/SaborCajabambino/Views/Reserva/_Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YVxfRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/jesus/Desktop/2025/5_CICLO/RESTAURANTE/5-Ciclo-Programacion-Aplicada-Restaurante-/MVC_RESTAURANTE/RESTAURANTEMVC/RestauranteMVC/SaborCajabambino/Views/Shared/Error.cshtml]

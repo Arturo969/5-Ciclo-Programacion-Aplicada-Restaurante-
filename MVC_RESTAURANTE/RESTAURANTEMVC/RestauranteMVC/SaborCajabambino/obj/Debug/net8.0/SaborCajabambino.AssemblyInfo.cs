@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SaborCajabambino")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b62818185477bed4600adcc12acccf356782772b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96f04393bd7ea627fe718651ee066aa36d5485db")]
 [assembly: System.Reflection.AssemblyProductAttribute("SaborCajabambino")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SaborCajabambino")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

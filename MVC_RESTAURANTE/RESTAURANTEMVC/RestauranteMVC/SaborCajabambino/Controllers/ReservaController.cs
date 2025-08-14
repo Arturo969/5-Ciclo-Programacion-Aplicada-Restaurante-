@@ -42,6 +42,10 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", reserva);
+            }
 
             return View(reserva);
         }
@@ -161,7 +165,34 @@ namespace SaborCajabambino.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        // Agregar el método de búsqueda
+        [HttpGet]
+        public async Task<IActionResult> Buscar(string searchTerm)
+        {
+            if (string.IsNullOrWhiteSpace(searchTerm))
+            {
+                var todos = await _context.Reservas
+                    .Include(r => r.IdClienteNavigation)
+                    .Include(r => r.IdMesaNavigation)
+                    .ToListAsync();
+                return Json(todos);
+            }
 
+            var reservas = await _context.Reservas
+                .Include(r => r.IdClienteNavigation)
+                .Include(r => r.IdMesaNavigation)
+                .Where(r => r.IdClienteNavigation.Nombres.Contains(searchTerm) ||
+                            r.Estado.Contains(searchTerm) ||
+                            r.Comentarios.Contains(searchTerm))
+                .ToListAsync();
+
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return Json(reservas);
+            }
+
+            return View("Index", reservas);
+        }
         private bool ReservaExists(int id)
         {
             return _context.Reservas.Any(e => e.IdReserva == id);

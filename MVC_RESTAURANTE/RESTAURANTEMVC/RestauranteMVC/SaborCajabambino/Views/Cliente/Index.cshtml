@@ -9,8 +9,9 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
-    <thead>
+<div class="table-responsive-md" style=" max-height: 550px; overflow-y: auto;">
+    <table class="table table-hover">
+        <thead class="table-dark sticky-top">
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Nombres)
@@ -75,3 +76,4 @@
 }
     </tbody>
 </table>
+</div>

@@ -1,0 +1,56 @@
+﻿    @*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model SaborCajabambino.Models.Producto
+<link href="~/css/detailStyle.css" rel="stylesheet" />
+<div class="details-container shadow p-4">
+   <span class="badge bg-info my-4 rounded d-flex justify-content-center">
+    <h4 class="mb-3">Detalles del Producto</h4>
+	</span>
+    <div class="row">
+        <dt class="col-sm-5">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt class="col-sm-5">
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+        <dd class="col-sm-7">
+            S/. @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt class="col-sm-5">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        @if (!string.IsNullOrEmpty(Model.Foto))
+        {
+            <dt class="col-sm-5">
+                @Html.DisplayNameFor(model => model.Foto)
+            </dt>
+            <dd class="col-sm-7">
+                <img src="@Model.Foto" alt="Foto del producto" class="img-fluid rounded" />
+            </dd>
+        }
+
+        <dt class="col-sm-5">
+            Categoría
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.IdCategoriaNavigation.Nombre)
+        </dd>
+
+        <dt class="col-sm-5">
+            @Html.DisplayNameFor(model => model.EsPreparado)
+        </dt>
+        <dd class="col-sm-7">
+            @(Model.EsPreparado.GetValueOrDefault() ? "Sí" : "No")
+        </dd>
+    </div>
+</div>

@@ -4,11 +4,13 @@
     ViewData["Title"] = "Delete";
 }
 
-<h1>Delete</h1>
 
-<h3>Are you sure you want to delete this?</h3>
+
+<span class="badge bg-danger my-4 rounded"><h3>¿Estás seguro que quieres eliminar este registro?</h3></span>
+
 <div>
-    <h4>Cliente</h4>
+
+    <span class="badge bg-warning rounded"><h4>Cliente - @Model.IdCliente</h4></span>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -63,7 +65,7 @@
     
     <form asp-action="Delete">
         <input type="hidden" asp-for="IdCliente" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <span class="badge bg-success"><a asp-action="Index" style="text-decoration:none;color:white;">Volver a la lista</a></span>
     </form>
 </div>

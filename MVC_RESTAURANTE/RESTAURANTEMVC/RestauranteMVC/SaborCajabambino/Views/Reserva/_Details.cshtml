@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model SaborCajabambino.Models.Reserva
+
+<link href="~/css/detailStyle.css" rel="stylesheet" />
+<div class="details-container shadow p-4">
+    <span class="badge bg-info my-4 rounded d-flex justify-content-center">
+        <h4 class="mb-3">Reserva - @Model.IdReserva</h4>
+    </span>
+    <div class="row">
+        <dt class="col-sm-5">
+            Cliente
+        </dt>
+        <dd class="col-sm-7">
+			@Html.DisplayFor(model => model.IdClienteNavigation.Nombres) @Html.DisplayFor(model => model.IdClienteNavigation.ApellidoPaterno) @Html.DisplayFor(model => model.IdClienteNavigation.ApellidoMaterno)
+        </dd>
+
+        <dt class="col-sm-5">
+            Fecha
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Fecha)
+        </dd>
+
+        <dt class="col-sm-5">
+            Hora
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Hora)
+        </dd>
+
+        <dt class="col-sm-5">
+            Mesa
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.IdMesaNavigation.IdMesa)
+        </dd>
+
+        <dt class="col-sm-5">
+            Número de Personas
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.NumeroPersonas)
+        </dd>
+
+        <dt class="col-sm-5">
+            Estado
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+
+        @if (!string.IsNullOrEmpty(Model.Comentarios))
+        {
+            <dt class="col-sm-5">
+                Comentarios
+            </dt>
+            <dd class="col-sm-7">
+                @Html.DisplayFor(model => model.Comentarios)
+            </dd>
+        }
+    </div>
+</div>

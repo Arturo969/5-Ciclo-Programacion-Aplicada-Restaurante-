@@ -41,6 +41,10 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_Details", producto);
+            }
 
             return View(producto);
         }

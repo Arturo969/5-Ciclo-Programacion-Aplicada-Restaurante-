@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "np3QsHUhgoE=",
+  "dgSpecHash": "gkU5xeCAXK8=",
   "success": true,
   "projectFilePath": "C:\\Users\\jesus\\Desktop\\2025\\5_CICLO\\RESTAURANTE\\5-Ciclo-Programacion-Aplicada-Restaurante-\\MVC_RESTAURANTE\\RESTAURANTEMVC\\RestauranteMVC\\SaborCajabambino\\SaborCajabambino.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jesus\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\jesus\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\jesus\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

@@ -4,62 +4,96 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<link href="~/css/tablaStyle.css" rel="stylesheet" />
+<h1>Productos</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Precio)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Foto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EsPreparado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCategoriaNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Precio)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Foto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.EsPreparado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdCategoriaNavigation.IdCategoria)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdProducto">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdProducto">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdProducto">Delete</a>
-            </td>
-        </tr>
+<div class="row">
+    <div class="col-md-4" id="detalleProducto">
+        <!-- Aquí se cargará la vista parcial -->
+    </div>
+    <div class="col-md-8">
+        <div class="d-flex align-items-center">
+            <!-- Barra de búsqueda -->
+            <div class="input-group m-4">
+                <span class="input-group-text bg-white border-end-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </span>
+                <input type="text" id="searchInput" class="form-control border-start-0" placeholder="Buscar producto...">
+            </div>
+            <!-- Botón para agregar un nuevo producto -->
+            <a asp-action="Create" class="btn btn-dark d-flex align-items-center rounded-pill">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg me-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z" />
+                </svg>
+                Agregar Nuevo Producto
+            </a>
+        </div>
+        <hr />
+        <div class="table-responsive-md" style=" max-height: 550px; overflow-y: auto;">
+            <table class="table table-hover">
+            <thead class="table-dark sticky-top">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Preparado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                        <td>S/. @Html.DisplayFor(modelItem => item.Precio)</td>
+                        <td>@Html.DisplayFor(modelItem => item.IdCategoriaNavigation.Nombre)</td>
+                        <td>@(item.EsPreparado.GetValueOrDefault() ? "Sí" : "No")</td>
+                        <td>
+                            <span class="badge badge-status bg-warning">
+                                <a asp-action="Edit" asp-route-id="@item.IdProducto">Editar</a>
+                            </span>
+                            <span class="badge badge-status bg-info">
+                                <a href="javascript:void(0);" onclick="cargarDetalle(@item.IdProducto)">Detalle</a>
+                            </span>
+                            <span class="badge badge-status bg-danger">
+                                <a asp-action="Delete" asp-route-id="@item.IdProducto">Eliminar</a>
+                            </span>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        </div>
+        
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Variable para almacenar el caché de productos
+        var productosCache = @Json.Serialize(Model.Select(p => new { 
+            idProducto = p.IdProducto,
+            nombre = p.Nombre,
+            precio = p.Precio,
+            categoria = p.IdCategoriaNavigation.Nombre,
+            esPreparado = p.EsPreparado.GetValueOrDefault()
+        }));
+
+        // Función para cargar los detalles
+        function cargarDetalle(id) {
+            $.get('/Producto/Details/' + id, function(data) {
+                $('#detalleProducto').html(data);
+            });
+        }
+
+        // Cargar el primer producto al iniciar
+        $(document).ready(function() {
+            var primerId = @((Model.FirstOrDefault()?.IdProducto ?? 0));
+            if (primerId > 0) {
+                cargarDetalle(primerId);
+            }
+        });
+    </script>
 }
-    </tbody>
-</table>

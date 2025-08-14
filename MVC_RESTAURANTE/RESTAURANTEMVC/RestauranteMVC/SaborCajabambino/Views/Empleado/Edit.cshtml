@@ -5,11 +5,16 @@
 }
 <link href="~/css/editStylecss.css" rel="stylesheet" />
 
-<h3>Editar Empleado</h3>
-<hr />
+
+
 
 <div class="d-flex justify-content-center align-items-center min-vh-100">
     <div class="card shadow">
+        <div class="card-header">
+            <span class="badge bg-warning my-4 rounded d-flex justify-content-center">
+                <h3>Editar Empleado</h3>
+            </span>
+        </div>
         <div class="card-body">
             <form class="form form-floating" asp-action="Edit">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>

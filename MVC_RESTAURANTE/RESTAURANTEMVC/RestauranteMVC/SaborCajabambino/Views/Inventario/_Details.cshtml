@@ -1,7 +1,11 @@
 @model SaborCajabambino.Models.Inventario
 <link href="~/css/detailStyle.css" rel="stylesheet" />
-<div class="details-container shadow p-4">    
-    <h4 class="mb-3">Detalles del Item</h4>    
+<div class="details-container shadow p-4">  
+    
+    <span class="badge bg-info my-4 rounded d-flex justify-content-center">
+		<h4 class="mb-3">Item - @Model.IdItem</h4>
+	</span>
+    
     <div class="row">
         <dt class="col-sm-5">
             Nombre

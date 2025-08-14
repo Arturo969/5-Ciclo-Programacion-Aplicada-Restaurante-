@@ -91,10 +91,26 @@
         </div>
     </div>
 </div>
-
+@{
+    var inventarioSimple = Model.Select(i => new
+    {
+        idItem = i.IdItem,
+        itemNombre = i.ItemNombre,
+        stock = i.Stock,
+        unidadMedida = i.UnidadMedida,
+        nivelReorden = i.NivelReorden,
+        idItemCategoriaNavigation = i.IdItemCategoriaNavigation == null ? null : new
+        {
+            categoria = i.IdItemCategoriaNavigation.Categoria
+        }
+    }).ToList();
+}
 @section Scripts {
     <script>
-          // Función para cargar los detalles
+        // Variable para almacenar el caché de inventario
+        var inventarioCache = @Json.Serialize(inventarioSimple);
+
+        // Función para cargar los detalles
         function cargarDetalle(id) {
             $.get('/Inventario/Details/' + id, function(data) {
                 $('#detalleInventario').html(data);
@@ -108,6 +124,62 @@
                 cargarDetalle(primerId);
             }
         });
+        // Función para actualizar la tabla con los resultados
+        function actualizarTabla(inventario) {
+            var tbody = $('table tbody');
+            tbody.empty();
+
+            inventario.forEach(function(item) {
+                var tr = $('<tr>');
+                tr.append($('<td>').text(item.itemNombre));
+                tr.append($('<td>').text(item.stock));
+                tr.append($('<td>').text(item.unidadMedida));
+
+                // Estado con badge
+                var estadoTd = $('<td>');
+                if (item.stock <= item.nivelReorden) {
+                    estadoTd.append('<span class="badge badge-status bg-warning text-dark">Low Stock</span>');
+                } else {
+                    estadoTd.append('<span class="badge badge-status bg-success">En stock</span>');
+                }
+                tr.append(estadoTd);
+
+                // Acciones
+                var acciones = $('<td>').append(
+                    `<span class="badge badge-status bg-warning"><a href="/Inventario/Edit/${item.idItem}">Editar</a></span> ` +
+                    `<span class="badge badge-status bg-info"><a href="javascript:void(0);" onclick="cargarDetalle(${item.idItem})">Detalle</a></span> ` +
+                    `<span class="badge badge-status bg-danger"><a href="/Inventario/Delete/${item.idItem}">Eliminar</a></span>`
+                );
+                tr.append(acciones);
+
+                tbody.append(tr);
+            });
+        }
+
+        // Función de búsqueda con debounce
+        var timeoutId;
+        $('#searchInput').on('input', function() {
+            clearTimeout(timeoutId);
+            var searchTerm = $(this).val().toLowerCase();
+
+            if (searchTerm.length < 3) {
+                // Para búsquedas cortas, usa el caché
+                var resultados = inventarioCache.filter(i =>
+                    i.itemNombre.toLowerCase().includes(searchTerm) ||
+                    (i.unidadMedida && i.unidadMedida.toLowerCase().includes(searchTerm)) ||
+                    (i.idItemCategoriaNavigation && i.idItemCategoriaNavigation.categoria.toLowerCase().includes(searchTerm))
+                );
+                actualizarTabla(resultados);
+            } else {
+                // Para búsquedas más específicas, consulta al servidor
+                timeoutId = setTimeout(function() {
+                    $.get('/Inventario/Buscar', { searchTerm: searchTerm })
+                        .done(function(data) {
+                            actualizarTabla(data);
+                        });
+                }, 300);
+            }
+        }); 
     </script>
 }
 

@@ -174,6 +174,34 @@ namespace SaborCajabambino.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // GET: Inventario/Buscar
+        [HttpGet]
+        public async Task<IActionResult> Buscar(string searchTerm)
+        {
+            if (string.IsNullOrWhiteSpace(searchTerm))
+            {
+                var todos = await _context.Inventarios
+                    .Include(i => i.IdItemCategoriaNavigation)
+                    .ToListAsync();
+                return Json(todos);
+            }
+
+            var inventarios = await _context.Inventarios
+                .Include(i => i.IdItemCategoriaNavigation)
+                .Where(i => i.ItemNombre.Contains(searchTerm) ||
+                            i.UnidadMedida.Contains(searchTerm) ||
+                            (i.IdItemCategoriaNavigation != null && 
+                             i.IdItemCategoriaNavigation.Categoria.Contains(searchTerm)))
+                .ToListAsync();
+
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return Json(inventarios);
+            }
+
+            return View("Index", inventarios);
+        }
+
         private bool InventarioExists(int id)
         {
             return _context.Inventarios.Any(e => e.IdItem == id);

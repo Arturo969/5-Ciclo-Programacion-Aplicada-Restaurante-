@@ -4,87 +4,97 @@
     ViewData["Title"] = "_Details";
 }
 <link href="~/css/detailStyle.css" rel="stylesheet" />
-<div class="details-container shadow p-4">
-    <h4 class="mb-3">Detalles del Empleado</h4>
-    <div class="row">
-        <dt class="col-sm-5">
-            Nombres
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.NombreCompleto)
-        </dd>
-        <dt class="col-sm-5">
-            DNI
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Dni)
-        </dd>
-        <dt class="col-sm-5">
-            Fecha de Nacimiento
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.FechaNacimiento)
-        </dd>
-        <dt class="col-sm-5">
-            Dirección
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Direccion)
-        </dd>
-        <dt class="col-sm-5">
-            Teléfono
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Telefono)
-        </dd>
-        <dt class="col-sm-5">
-            Correo
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.CorreoElectronico)
-        </dd>
-        <dt class="col-sm-5">
-            Fecha de Nacimiento
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.FechaNacimiento)
-        </dd>
-        <dt class="col-sm-5">
-            Rol
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Rol)
-        </dd>
-        <dt class="col-sm-5">
-            Turno
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Turno)
-        </dd>
-        <dt class="col-sm-5">
-            Fecha de Contratación
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.FechaContratacion)
-        </dd>
-        <dt class="col-sm-5">
-            Salario
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Salario)
-        </dd>
+<div class="details-container shadow p-0">
+    <div class="card">
+        <div class="card-header">
+            <span class="badge bg-info my-4 rounded d-flex justify-content-center">
+                <h3>Empleado - @Model.IdEmpleado</h3>
+            </span>
+		</div>
+        <div class="card-body">
+            <div class="row">
+                <dt class="col-sm-5">
+                    Nombres
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.NombreCompleto)
+                </dd>
+                <dt class="col-sm-5">
+                    DNI
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Dni)
+                </dd>
+                <dt class="col-sm-5">
+                    Fecha de Nacimiento
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.FechaNacimiento)
+                </dd>
+                <dt class="col-sm-5">
+                    Dirección
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Direccion)
+                </dd>
+                <dt class="col-sm-5">
+                    Teléfono
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Telefono)
+                </dd>
+                <dt class="col-sm-5">
+                    Correo
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.CorreoElectronico)
+                </dd>
+                <dt class="col-sm-5">
+                    Fecha de Nacimiento
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.FechaNacimiento)
+                </dd>
+                <dt class="col-sm-5">
+                    Rol
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Rol)
+                </dd>
+                <dt class="col-sm-5">
+                    Turno
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Turno)
+                </dd>
+                <dt class="col-sm-5">
+                    Fecha de Contratación
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.FechaContratacion)
+                </dd>
+                <dt class="col-sm-5">
+                    Salario
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Salario)
+                </dd>
 
-        <dt class="col-sm-5">
-            Estado
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Estado)
-        </dd>
-        <dt class="col-sm-5">
-            Usuario
-        </dt>
-        <dd class="col-sm-7">
-            @Html.DisplayFor(model => model.Usuario)
-        </dd>        
+                <dt class="col-sm-5">
+                    Estado
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Estado)
+                </dd>
+                <dt class="col-sm-5">
+                    Usuario
+                </dt>
+                <dd class="col-sm-7">
+                    @Html.DisplayFor(model => model.Usuario)
+                </dd>
+            </div>
+        </div>
     </div>
+  
+    
 </div>

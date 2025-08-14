@@ -26,78 +26,75 @@
 
 <p>
     <a asp-action="Create">Create New</a>
-</p>
-<table class="table table-hover">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Fecha)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Hora)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TipoPedido)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DireccionEntrega)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Comentarios)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdClienteNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdEmpleadoNavigation)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdMesaNavigation)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fecha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Hora)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TipoPedido)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DireccionEntrega)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Comentarios)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdClienteNavigation.IdCliente)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdEmpleadoNavigation.IdEmpleado)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdMesaNavigation.IdMesa)
-            </td>
-            <td>
-                    <span class ="badge badge-status bg-warning text-dark"><a asp-action="Edit" asp-route-id="@item.IdPedido">Edit</a></span>
-                    <span class="badge badge-status bg-info text-dark">
-                        <a asp-action="Details" asp-route-id="@item.IdPedido">Details</a>
-                    </span>
-                    <span class="badge badge-status bg-danger text-dark"><a asp-action="Delete" asp-route-id="@item.IdPedido">Delete</a></span>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <div class="table-responsive-md" style=" max-height: 550px; overflow-y: auto;">
+        <table class="table table-hover">
+            <thead class="table-dark sticky-top">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Fecha)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Hora)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TipoPedido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DireccionEntrega)
+                </th>
+                <th>
+                    Cliente
+                </th>
+                <th>
+                    Empleado
+                </th>
+                <th>
+                    Mesa
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {   
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Fecha)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hora)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Estado)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoPedido)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DireccionEntrega)
+                    </td>
+                    <td>
+                        @($"{item.IdClienteNavigation.Nombres} {item.IdClienteNavigation.ApellidoPaterno} {item.IdClienteNavigation.ApellidoMaterno}")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdEmpleadoNavigation.NombreCompleto)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IdMesaNavigation.IdMesa)
+                    </td>
+                    <td>
+                        <span class="badge badge-status bg-warning text-dark"><a asp-action="Edit" asp-route-id="@item.IdPedido">Edit</a></span>
+                        <span class="badge badge-status bg-info text-dark">
+                            <a asp-action="Details" asp-route-id="@item.IdPedido">Details</a>
+                        </span>
+                        <span class="badge badge-status bg-danger text-dark"><a asp-action="Delete" asp-route-id="@item.IdPedido">Delete</a></span>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    </div>
+

@@ -286,3 +286,4 @@ C:\Users\jesus\Desktop\2025\5_CICLO\RESTAURANTE\5-Ciclo-Programacion-Aplicada-Re
 C:\Users\jesus\Desktop\2025\5_CICLO\RESTAURANTE\5-Ciclo-Programacion-Aplicada-Restaurante-\MVC_RESTAURANTE\RESTAURANTEMVC\RestauranteMVC\SaborCajabambino\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\jesus\Desktop\2025\5_CICLO\RESTAURANTE\5-Ciclo-Programacion-Aplicada-Restaurante-\MVC_RESTAURANTE\RESTAURANTEMVC\RestauranteMVC\SaborCajabambino\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jesus\Desktop\2025\5_CICLO\RESTAURANTE\5-Ciclo-Programacion-Aplicada-Restaurante-\MVC_RESTAURANTE\RESTAURANTEMVC\RestauranteMVC\SaborCajabambino\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\jesus\Desktop\2025\5_CICLO\RESTAURANTE\5-Ciclo-Programacion-Aplicada-Restaurante-\MVC_RESTAURANTE\RESTAURANTEMVC\RestauranteMVC\SaborCajabambino\bin\Debug\net8.0\Dapper.dll
