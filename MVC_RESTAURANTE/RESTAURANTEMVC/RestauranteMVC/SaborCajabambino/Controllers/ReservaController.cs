@@ -18,14 +18,12 @@ namespace SaborCajabambino.Controllers
         {
             _context = context;
         }
-
         // GET: Reserva
         public async Task<IActionResult> Index()
         {
             var restauranteProgramacionIiContext = _context.Reservas.Include(r => r.IdClienteNavigation).Include(r => r.IdMesaNavigation);
             return View(await restauranteProgramacionIiContext.ToListAsync());
         }
-
         // GET: Reserva/Details/5
         public async Task<IActionResult> Details(int? id)
         {

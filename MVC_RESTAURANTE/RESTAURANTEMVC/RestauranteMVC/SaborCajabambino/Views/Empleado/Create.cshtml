@@ -114,16 +114,16 @@
                             <input type="submit" value="Crear" class="btn btn-primary" />
                         </div>
                     </form>
-
+                    <span class="badge badge-status bg-warning">
+                        <a asp-action="Index">Volver a la lista de empleados</a>
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </div>
             
-<span class="badge badge-status bg-warning">
-    <a asp-action="Index">Back to List</a>
-</span>
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

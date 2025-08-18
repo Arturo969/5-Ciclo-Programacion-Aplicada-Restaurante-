@@ -1,0 +1,19 @@
+﻿.badge-status a {
+    font-weight: normal;
+    padding: 0.5em 0.8em;
+    border-radius: 50rem;
+}
+
+.badge-status a {
+    text-decoration: none;
+    color: white;
+}
+
+    .badge-status a:hover {
+        text-decoration: none;
+        color: black !important;
+    }
+
+.card.shadow {
+    width: 32rem;
+}

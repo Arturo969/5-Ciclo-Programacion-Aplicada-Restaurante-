@@ -52,7 +52,17 @@ namespace SaborCajabambino.Controllers
         // GET: Producto/Create
         public IActionResult Create()
         {
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria");
+            ViewData["IdCategoria"] = new SelectList(
+                  _context.Categoria.Select(c => new
+                  {
+                      c.IdCategoria,
+                      c.Nombre // Usar el nombre en lugar del ID
+                  }),
+                  "IdCategoria",
+                  "Nombre", // Cambiar a Nombre
+                  null
+              );
+
             return View();
         }
 
@@ -69,7 +79,17 @@ namespace SaborCajabambino.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria", producto.IdCategoria);
+            ViewData["IdCategoria"] = new SelectList(
+                    _context.Categoria.Select(c => new
+                    {
+                        c.IdCategoria,
+                        c.Nombre // Usar el nombre en lugar del ID
+                    }),
+                    "IdCategoria",
+                    "Nombre", // Cambiar a Nombre
+                    producto.IdCategoria
+                );
+
             return View(producto);
         }
 
@@ -86,7 +106,16 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria", producto.IdCategoria);
+            ViewData["IdCategoria"] = new SelectList(
+                   _context.Categoria.Select(c => new
+                   {
+                       c.IdCategoria,
+                       c.Nombre // Usar el nombre en lugar del ID
+                   }),
+                   "IdCategoria",
+                   "Nombre", // Cambiar a Nombre
+                   producto.IdCategoria
+               );
             return View(producto);
         }
 
@@ -122,7 +151,16 @@ namespace SaborCajabambino.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categoria, "IdCategoria", "IdCategoria", producto.IdCategoria);
+            ViewData["IdCategoria"] = new SelectList(
+                    _context.Categoria.Select(c => new
+                    {
+                        c.IdCategoria,
+                        c.Nombre
+                    }),
+                    "IdCategoria",
+                    "Nombre",
+                    producto.IdCategoria
+                );
             return View(producto);
         }
 

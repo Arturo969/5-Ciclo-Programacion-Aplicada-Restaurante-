@@ -1,8 +1,36 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+	ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container mt-4">
+	<h1 class="display-5 text-black mb-4">Panel de Control</h1>
+
+
+	<div class="row d-flex align-content-between justify-content-center">
+		<div class="card col-md-3 mb-4 mx-2 p-4">
+			<a href="@Url.Action("Margen", "Pedido")" class="dashboard-card text-decoration-none">
+				<i class="fas fa-receipt card-icon"></i>
+				<h3 class="card-title">Gestionar Pedidos</h3>
+				<p class="card-text">Tomar nuevas órdenes y ver pedidos activos.</p>
+			</a>
+		</div>
+
+		<div class="card col-md-3 mb-4 mx-2 p-4">
+			<a href="@Url.Action("Index", "Reserva")" class="dashboard-card text-decoration-none">
+				<i class="fas fa-calendar-alt card-icon"></i>
+				<h3 class="card-title">Administrar Reservas</h3>
+				<p class="card-text">Ver y gestionar las reservas del día.</p>
+			</a>
+		</div>
+
+		<div class="card col-md-3 mb-4 mx-2 p-4">
+			<a href="@Url.Action("Index", "Mesa")" class="dashboard-card text-decoration-none">
+				<i class="fas fa-chair card-icon"></i>
+				<h3 class="card-title">Estado de Mesas</h3>
+				<p class="card-text">Mapa visual de las mesas ocupadas y libres.</p>
+			</a>
+		</div>
+
+	</div>
+
 </div>

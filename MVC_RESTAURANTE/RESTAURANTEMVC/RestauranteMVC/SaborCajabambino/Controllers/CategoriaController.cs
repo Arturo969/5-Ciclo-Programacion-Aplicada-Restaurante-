@@ -18,13 +18,11 @@ namespace SaborCajabambino.Controllers
         {
             _context = context;
         }
-
         // GET: Categoria
         public async Task<IActionResult> Index()
         {
             return View(await _context.Categoria.ToListAsync());
         }
-
         // GET: Categoria/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -32,23 +30,19 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
-
             var categoria = await _context.Categoria
                 .FirstOrDefaultAsync(m => m.IdCategoria == id);
             if (categoria == null)
             {
                 return NotFound();
             }
-
             return View(categoria);
         }
-
         // GET: Categoria/Create
         public IActionResult Create()
         {
             return View();
         }
-
         // POST: Categoria/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -64,7 +58,6 @@ namespace SaborCajabambino.Controllers
             }
             return View(categoria);
         }
-
         // GET: Categoria/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -72,7 +65,6 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
-
             var categoria = await _context.Categoria.FindAsync(id);
             if (categoria == null)
             {
@@ -80,7 +72,6 @@ namespace SaborCajabambino.Controllers
             }
             return View(categoria);
         }
-
         // POST: Categoria/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -92,7 +83,6 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
-
             if (ModelState.IsValid)
             {
                 try
@@ -115,7 +105,6 @@ namespace SaborCajabambino.Controllers
             }
             return View(categoria);
         }
-
         // GET: Categoria/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -123,17 +112,14 @@ namespace SaborCajabambino.Controllers
             {
                 return NotFound();
             }
-
             var categoria = await _context.Categoria
                 .FirstOrDefaultAsync(m => m.IdCategoria == id);
             if (categoria == null)
             {
                 return NotFound();
             }
-
             return View(categoria);
         }
-
         // POST: Categoria/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -148,7 +134,6 @@ namespace SaborCajabambino.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
         private bool CategoriaExists(int id)
         {
             return _context.Categoria.Any(e => e.IdCategoria == id);

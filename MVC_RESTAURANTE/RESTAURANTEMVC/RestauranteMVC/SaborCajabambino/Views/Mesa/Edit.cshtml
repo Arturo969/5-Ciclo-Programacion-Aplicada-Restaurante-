@@ -1,44 +1,62 @@
 ﻿@model SaborCajabambino.Models.Mesa
 
 @{
-    ViewData["Title"] = "Edit";
+	ViewData["Title"] = "Edit";
 }
+<link href="~/css/editStylecss.css" rel="stylesheet" />
 
-<h1>Edit</h1>
+<div class="d-flex justify-content-center align-items-center ">
+	<div class="card shadow">
+		<div class="card-header">
+			<span class="badge bg-warning my-4 rounded d-flex justify-content-center">
+				<h3>Editar Mesa - @Model.IdMesa</h3>
+			</span>
+		</div>
+		<div class="card-body">
+			<div class="col-md-4">
+				<form asp-action="Edit">
+					<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+					<input type="hidden" asp-for="IdMesa" />
+					<div class="form-group">
+						<label asp-for="Capacidad" class="control-label"></label>
+						<input asp-for="Capacidad" class="form-control" />
+						<span asp-validation-for="Capacidad" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Ubicacion" class="control-label"></label>
+						<select asp-for="Ubicacion" class="form-control" asp-items="ViewBag.Estados">
+							<option value="">-- Seleccione una ubicación --</option>
+							<option value="Primer Piso">Primer Piso</option>
+							<option value="Segundo Piso">Segundo Piso</option>
+						</select>
+						<span asp-validation-for="Ubicacion" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<label asp-for="Estado" class="control-label"></label>
+						<select asp-for="Estado" class="form-control" asp-items="ViewBag.Estados">
+							<option value="">-- Seleccione un estado --</option>
+							<option value="Disponible">Disponible</option>
+							<option value="Ocupada">Ocupada</option>
+							<option value="Reservada">Reservada</option>
+							<option value="Mantenimiento">Mantenimiento</option>
+						</select>
+						<span asp-validation-for="Estado" class="text-danger"></span>
+					</div>
+					<div class="form-group">
+						<input type="submit" value="Guardar" class="btn btn-primary" />
+					</div>
+				</form>
+				<div>					
+						<a asp-action="Index" class="badge badge-status bg-warning">Volver a la lista de mesas</a>
+				</div>
+			</div>
+		</div>
 
-<h4>Mesa</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdMesa" />
-            <div class="form-group">
-                <label asp-for="Capacidad" class="control-label"></label>
-                <input asp-for="Capacidad" class="form-control" />
-                <span asp-validation-for="Capacidad" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Ubicacion" class="control-label"></label>
-                <input asp-for="Ubicacion" class="form-control" />
-                <span asp-validation-for="Ubicacion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Estado" class="control-label"></label>
-                <input asp-for="Estado" class="form-control" />
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+
+	</div>
 </div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+	@{
+		await Html.RenderPartialAsync("_ValidationScriptsPartial");
+	}
 }

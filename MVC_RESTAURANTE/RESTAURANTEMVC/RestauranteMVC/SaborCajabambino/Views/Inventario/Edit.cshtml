@@ -5,10 +5,14 @@
 }
 <link href="~/css/editStylecss.css" rel="stylesheet" />
 
-<h3>Editar Inventario</h3>
 <hr />
 <div class="d-flex justify-content-center align-items-center min-vh-100">
     <div class="card shadow">
+        <div class="card-header">
+            <span class="badge bg-warning my-4 rounded d-flex justify-content-center">
+                <h3>Editar Item - @Model.IdItem</h3>
+            </span>
+        </div>
         <div class="card-body">
             <form asp-action="Edit" method="post">
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>

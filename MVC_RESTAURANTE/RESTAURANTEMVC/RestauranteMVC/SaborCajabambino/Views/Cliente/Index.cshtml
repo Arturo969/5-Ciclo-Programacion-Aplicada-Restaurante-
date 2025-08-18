@@ -1,79 +1,95 @@
 ﻿@model IEnumerable<SaborCajabambino.Models.Cliente>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
+<link href="~/css/tablaStyle.css" rel="stylesheet" />
+<h1>Clientes</h1>
 
-<h1>Index</h1>
+<div class="row">
+	<div class="col-md-12">
+		<div class="d-flex align-items-center">
+			<!-- Barra de búsqueda -->
+			<div class="input-group m-4">
+				<span class="input-group-text bg-white border-end-0">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+					</svg>
+				</span>
+				<input type="text" id="searchInput" class="form-control border-start-0" placeholder="Buscar empleado...">
+			</div>
+			<!-- Botón para agregar un nuevo elemento -->
+			<a asp-action="Create" class="btn btn-dark d-flex align-items-center rounded-pill">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg me-1" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2z" />
+				</svg>
+				Agregar Nuevo Item
+			</a>
+		</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<div class="table-responsive-md" style=" max-height: 550px; overflow-y: auto;">
-    <table class="table table-hover">
-        <thead class="table-dark sticky-top">
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Nombres)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ApellidoPaterno)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.ApellidoMaterno)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Dni)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefono)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CorreoElectronico)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Direccion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombres)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ApellidoPaterno)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.ApellidoMaterno)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Dni)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CorreoElectronico)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaNacimiento)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdCliente">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdCliente">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdCliente">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+
+		<hr />
+		<table class="table table-hover">
+			<thead class="table-dark sticky-top">
+				<tr>
+					<th>
+						Nombres
+					</th>
+
+					<th>
+						DNI
+					</th>
+					<th>
+						Teléfono
+					</th>
+					<th>
+						Correo
+					</th>
+					<th>
+						Dirección
+					</th>
+					<th>
+						Fecha de nacimiento
+					</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model)
+				{
+					<tr>
+						<td>
+							@Html.DisplayFor(modelItem => item.ApellidoPaterno) @Html.DisplayFor(modelItem => item.ApellidoMaterno) @Html.DisplayFor(modelItem => item.Nombres)
+						</td>		
+						<td>
+							@Html.DisplayFor(modelItem => item.Dni)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Telefono)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.CorreoElectronico)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.Direccion)
+						</td>
+						<td>
+							@Html.DisplayFor(modelItem => item.FechaNacimiento)
+						</td>
+						<td>
+							<span class="badge badge-status bg-warning">
+								<a asp-action="Edit" asp-route-id="@item.IdCliente">Editar</a> 
+							</span>
+							<span class="badge badge-status bg-info">
+								<a asp-action="Details" asp-route-id="@item.IdCliente">Detalles</a>
+							</span>
+							<span class="badge badge-status bg-danger">
+								<a asp-action="Delete" asp-route-id="@item.IdCliente">Eliminar</a>
+							</span>
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
 </div>
